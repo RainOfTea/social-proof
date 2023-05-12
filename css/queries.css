@@ -1,0 +1,66 @@
+/* Responsive below 1040px */
+
+@media (max-width: 65em) {
+  /********** RATINGS SECTION **********/
+  .rating-item:first-child {
+    margin-right: 0;
+  }
+
+  .rating-item:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+/* Responsive below 944px */
+
+@media (max-width: 59em) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 40rem;
+  }
+
+  /********** TITLE SECTION **********/
+
+  .section-title {
+    justify-self: center;
+    align-self: baseline;
+  }
+
+  .title-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  /********** RATINGS SECTION **********/
+
+  .section-ratings {
+    align-items: center;
+  }
+
+  .rating-item {
+    flex-direction: column;
+    padding: 1.8rem 0;
+  }
+
+  /********** TESTIMONIALS SECTION **********/
+
+  .section-testimonials {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* //TODO: Kell egyáltalán grid/flex ezekbe a testimonial elemekbe? */
+
+  .testimonial {
+    row-gap: 4rem;
+  }
+
+  .testimonial:nth-child(2),
+  .testimonial:nth-child(3) {
+    margin-top: 0;
+  }
+}
