@@ -18,24 +18,15 @@
   /********** RATINGS SECTION **********/
   .section-ratings {
     align-items: center;
+    width: 100%;
   }
 
-  /* 
-  .rating-item * {
-    margin: 0;
-  } */
-
   .rating-item:nth-child(1) {
-    transform: translateX(-5rem);
     margin-right: 0;
   }
 
   .rating-item:nth-child(2) {
     margin-right: 0;
-  }
-
-  .rating-item:nth-child(3) {
-    transform: translateX(5rem);
   }
 }
 
@@ -43,13 +34,11 @@
 @media (max-width: 50em) {
   main {
     grid-template-columns: 1fr;
-    max-width: 40rem;
-    margin: 2.4rem;
+    max-width: 100vw;
   }
 
   /********** TITLE SECTION **********/
   .section-title {
-    max-width: 100%;
     justify-self: center;
     align-items: center;
     text-align: center;
@@ -75,22 +64,31 @@
   /********** RATINGS SECTION **********/
 
   .section-ratings {
+    max-width: 100%;
+    justify-content: center;
     align-items: center;
   }
 
   .rating-item {
     flex-direction: column;
-    padding: 1.8rem 0;
+    padding: 1rem 0;
+  }
+
+  .rating-item * {
+    margin: 0;
   }
 
   /********** TESTIMONIALS SECTION **********/
 
   .section-testimonials {
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
+    width: 100%;
   }
 
   .testimonial {
+    width: 100%;
     row-gap: 2rem;
   }
 
