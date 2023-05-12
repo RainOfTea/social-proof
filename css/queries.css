@@ -1,38 +1,75 @@
-/* Responsive below 1040px */
+/* Responsive below 1088px */
+@media (max-width: 68em) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 70rem;
+    row-gap: 4rem;
+  }
 
-@media (max-width: 65em) {
+  /********** TITLE SECTION **********/
+  .section-title {
+    justify-self: center;
+    align-items: center;
+    max-width: 80%;
+    text-align: center;
+    padding: 0;
+  }
+
   /********** RATINGS SECTION **********/
-  .rating-item:first-child {
+  .section-ratings {
+    align-items: center;
+  }
+
+  /* 
+  .rating-item * {
+    margin: 0;
+  } */
+
+  .rating-item:nth-child(1) {
+    transform: translateX(-5rem);
     margin-right: 0;
   }
 
   .rating-item:nth-child(2) {
     margin-right: 0;
   }
+
+  .rating-item:nth-child(3) {
+    transform: translateX(5rem);
+  }
 }
 
-/* Responsive below 944px */
-
-@media (max-width: 59em) {
+/* Responsive below 786px */
+@media (max-width: 50em) {
   main {
     grid-template-columns: 1fr;
     max-width: 40rem;
+    margin: 2.4rem;
   }
 
   /********** TITLE SECTION **********/
-
   .section-title {
+    max-width: 100%;
     justify-self: center;
-    align-self: baseline;
+    align-items: center;
+    text-align: center;
+    padding: 0;
   }
 
   .title-text {
+    font-size: 4rem;
+    margin: 0 auto 2rem auto;
     padding-right: 0;
     text-align: center;
+    max-width: 100%;
   }
 
   .intro-text {
+    font-size: 1.8rem;
+    line-height: 1.2;
     text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   /********** RATINGS SECTION **********/
@@ -53,10 +90,8 @@
     gap: 1rem;
   }
 
-  /* //TODO: Kell egyáltalán grid/flex ezekbe a testimonial elemekbe? */
-
   .testimonial {
-    row-gap: 4rem;
+    row-gap: 2rem;
   }
 
   .testimonial:nth-child(2),
