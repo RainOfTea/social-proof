@@ -1,9 +1,10 @@
-/* Responsive below 1088px */
+/* Responsive below 1248px */
 
-@media (max-width: 68em) {
+@media (max-width: 78em) {
   main {
     grid-template-columns: 1fr;
     row-gap: 4rem;
+    width: 60%;
   }
 
   /********** TITLE SECTION **********/
@@ -12,6 +13,13 @@
     align-items: center;
     max-width: 80%;
     text-align: center;
+  }
+
+  .title-text {
+    padding: 0;
+  }
+
+  .intro-text {
     padding: 0;
   }
 
@@ -30,10 +38,11 @@
   }
 }
 
-/* Responsive below 786px */
-@media (max-width: 50em) {
+/* Responsive below 1000px */
+@media (max-width: 62.5em) {
   main {
     grid-template-columns: 1fr;
+    width: 40%;
   }
 
   /********** TITLE SECTION **********/
@@ -70,8 +79,9 @@
 
   .rating-item {
     flex-direction: column;
+    gap: 1rem;
     padding: 1rem 0;
-    max-width: 80%;
+    max-width: 35rem;
   }
 
   /********** TESTIMONIALS SECTION **********/
@@ -93,4 +103,7 @@
   .testimonial:nth-child(3) {
     margin-top: 0;
   }
+}
+
+@media (max-width: 31em) {
 }
