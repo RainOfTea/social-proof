@@ -16,11 +16,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  overflow-x: hidden !important;
 }
 
 /* Upper desktop background SVG */
+
 body::before {
   content: '';
   position: fixed;
@@ -35,6 +34,7 @@ body::before {
 }
 
 /* Bottom desktop background SVG */
+
 body::after {
   content: '';
   position: fixed;
@@ -48,15 +48,11 @@ body::after {
   z-index: -10;
 }
 
-.desktop-background {
-  position: absolute;
-}
-
 main {
   display: grid;
-  grid-template-columns: 45% auto;
+  grid-template-columns: 45% 55%;
   grid-template-rows: auto;
-  max-width: 111rem;
+  max-width: 100rem;
   row-gap: 4rem;
 
   margin: 2rem;
@@ -91,7 +87,6 @@ main {
 /********** RATINGS SECTION **********/
 
 .section-ratings {
-  /* border: 2px solid red; */
   display: flex;
   max-width: 100%;
   flex-direction: column;
@@ -143,8 +138,6 @@ main {
 /********** TESTIMONIALS SECTION **********/
 
 .section-testimonials {
-  /* border: 2px solid red; */
-
   grid-column: 1 / -1;
   display: flex;
   gap: 2rem;
