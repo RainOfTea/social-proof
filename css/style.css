@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -51,8 +52,9 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   width: 111rem;
-  /* width: 77%; */
   row-gap: 6rem;
+
+  /* overflow-x: hidden; */
 
   margin: 2rem;
   justify-items: center;
@@ -88,7 +90,7 @@ main {
 
 .section-ratings {
   display: flex;
-  max-width: 100%;
+  max-width: 45rem;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
@@ -101,7 +103,7 @@ main {
 
 .rating-item {
   display: flex;
-  width: 45rem;
+  min-width: 45rem;
   align-items: center;
   justify-content: flex-start;
   padding: 2rem 0 2rem 3.5rem;
