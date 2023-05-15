@@ -4,6 +4,8 @@
     grid-template-columns: 1fr;
     row-gap: 4rem;
     width: 60%;
+    margin: 2rem 0;
+    padding: 2.4rem;
   }
 
   /********** TITLE SECTION **********/
@@ -11,7 +13,6 @@
     justify-self: center;
     align-items: center;
     text-align: center;
-    min-width: 100%;
   }
 
   .title-text {
@@ -32,10 +33,10 @@
   .rating-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-around;
     min-width: 0;
     width: 100%;
+    min-height: 8rem;
     padding: 1rem 0;
   }
 
@@ -69,5 +70,14 @@
   .testimonial:nth-child(2),
   .testimonial:nth-child(3) {
     margin-top: 0;
+  }
+}
+
+/* Responsive below 688px */
+@media (max-width: 43rem) {
+  main {
+    margin: 0;
+    width: 100%;
+    row-gap: 6rem;
   }
 }
