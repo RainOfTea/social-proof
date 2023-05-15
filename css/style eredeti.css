@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   font-family: 'League Spartan', sans-serif;
+  border: 1px solid red;
 }
 
 html {
@@ -15,10 +16,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 /* Upper desktop background SVG */
+
 body::before {
   content: '';
   position: fixed;
@@ -33,6 +34,7 @@ body::before {
 }
 
 /* Bottom desktop background SVG */
+
 body::after {
   content: '';
   position: fixed;
@@ -99,28 +101,29 @@ main {
 
 .rating-item {
   display: flex;
-  width: 45rem;
+  width: 40rem;
   align-items: center;
   justify-content: flex-start;
-  padding: 2rem 0 2rem 3.5rem;
+  gap: 2.4rem;
+  padding: 1.8rem 3.2rem;
   background-color: hsl(300, 24%, 96%);
   border-radius: 10px;
 
   transition: all 300ms;
 }
 
-.rating-item:nth-child(1) {
-  transform: translateX(-10rem);
+.rating-item:first-child {
+  margin-right: 10rem;
 }
 
 .rating-item:nth-child(2) {
-  transform: translateX(-5rem);
+  margin-right: 5rem;
 }
 
 .rating-stars {
   display: flex;
   gap: 0.9rem;
-  margin-right: 3.3rem;
+  margin-right: 2rem;
 }
 
 .rating-stars li {
@@ -139,7 +142,6 @@ main {
   display: flex;
   gap: 2rem;
   min-height: 10rem;
-  width: 100%;
   justify-content: space-between;
   align-items: flex-start;
 }
