@@ -27,10 +27,8 @@ Users should be able to:
 
 ### Links
 
-TEST
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/RainOfTea/social-proof)
+- [Live Site URL](https://wondrous-narwhal-48d38b.netlify.app/)
 
 ## My process
 
