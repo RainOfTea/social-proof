@@ -27,8 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/RainOfTea/social-proof)
-- [Live Site URL](https://steady-lily-a9354d.netlify.app/)
+The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
 
 ## My process
 
